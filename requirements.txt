@@ -1,0 +1,5 @@
+flask==1.1.2
+jinja2==2.11.3
+werkzeug==1.0.1
+markupsafe==1.1.1
+gunicorn==19.9.0
