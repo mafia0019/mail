@@ -27,7 +27,8 @@ def send_mail():
         m=smtplib.SMTP_SSL('smtp.gmail.com',465)
         m.login('pythontech39@gmail.com','python@1234')
         m.sendmail('pythontech39@gmail.com',val3,'Hello {0}\n Your request has been submitted for the course {1}\n Team HR'.format(val,val2))
-        return render_template('sum.html')
+        m.close()
+	return render_template('sum.html')
 if __name__=='__main__':
     summ.run()
 
